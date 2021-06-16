@@ -51,16 +51,12 @@ extension NSAttributedString {
 
 
 // MARK: - Examples of realization
-
-func formCrossedOutPriceAndRedDiscount(price: String, discountPrice: String) -> NSAttributedString {
-    let price: AttributedString = "\(price, color: UIColor.black.withAlphaComponent(0.5), style: UIFont.systemFont(ofSize: 15.0, weight: .bold), strikethrough: true)"
-    let discountPrice: AttributedString = "\(discountPrice, color: UIColor.red)"
-    let result: NSAttributedString = price.value + NSAttributedString(string: "\n") + discountPrice.value
-    
-    return result
-}
-
-formCrossedOutPriceAndRedDiscount(price: "16", discountPrice: "17")
-
-
-
+//func formCrossedOutPriceAndRedDiscount(price: String, discountPrice: String) -> NSAttributedString {
+//    let price: AttributedString = "\(price, color: UIColor.black.withAlphaComponent(0.5), style: UIFont.systemFont(ofSize: 15.0, weight: .bold), strikethrough: true)"
+//    let discountPrice: AttributedString = "\(discountPrice, color: UIColor.red)"
+//    let result: NSAttributedString = price.value + NSAttributedString(string: "\n") + discountPrice.value
+//
+//    return result
+//}
+//
+//formCrossedOutPriceAndRedDiscount(price: "16", discountPrice: "17")
